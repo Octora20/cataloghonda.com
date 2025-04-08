@@ -75,14 +75,11 @@ nav ul li a:hover {
   text-align: center;
   color: white;
   z-index: 2;
-
- 
 }
 
 .banner-content h1 {
   font-size: 24px;
   margin-bottom: 15px;
-  /* text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .btn {
@@ -101,9 +98,10 @@ nav ul li a:hover {
   position: relative;
   top: 10px;
 }
+
 .banner-content .btn:hover {
   background-color: #c40202;
-  color: #ffff66
+  color: #ffff66;
 }
 
 main {
@@ -161,8 +159,6 @@ main {
   display: block;
 }
 
-
-
 footer {
   background-color: #333;
   color: white;
@@ -170,7 +166,6 @@ footer {
   padding: 15px;
   margin-top: 100px;
 }
-
 
 /* animasi banner content */
 .banner-content h1,
@@ -201,5 +196,34 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .intro,
+  .map-box {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  main {
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .banner-content h1 {
+    font-size: 20px;
+  }
+
+  .banner-shape {
+    height: 300px;
   }
 }
